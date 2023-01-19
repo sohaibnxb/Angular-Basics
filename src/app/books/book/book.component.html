@@ -1,0 +1,8 @@
+<li>
+    <!-- <p>{{i+1}}</p> -->
+    <p>Book Name : {{book.name}}</p>
+    <p>Author : {{book.author}}</p>
+    <p>Price : {{book.price}}</p>
+    <button *ngIf="!isInCart" (click)="addToCart()">add to cart</button>
+    <button *ngIf="isInCart" (click)="removeCart()">remove from cart</button>
+</li>
